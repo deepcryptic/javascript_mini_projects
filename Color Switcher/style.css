@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+nav {
+  background: #fff;
+  padding: 15px 30px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4a47a3;
+  background: #f4f4f9;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: 2px solid #4a47a3;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #4a47a3;
+  color: #fff;
+}
+
+h1, h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Container */
+.canvas {
+  width: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  gap: 15px;
+}
+
+/* Color Buttons */
+.button {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 0.2rem solid black;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Background colors based on ID */
+#gray   { background-color: gray; }
+#white  { background-color: white; }
+#blue   { background-color: blue; }
+#yellow { background-color: yellow; }
+#red    { background-color: red; }
+#green  { background-color: green; }
+#purple { background-color: purple; }
+#aqua   { background-color: aqua; } 
+#brown  { background-color: brown; }
+
+/* -------------------- Responsive -------------------- */
+@media (max-width: 768px) {
+  .canvas {
+    width: 90%;
+    gap: 12px;
+  }
+  .button {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .canvas {
+    width: 100%;
+    gap: 10px;
+  }
+  .button {
+    width: 60px;
+    height: 60px;
+  }
+  nav a {
+    font-size: 1.2rem;
+    padding: 6px 12px;
+  }
+  h1, h2 {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+}
